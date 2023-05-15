@@ -363,8 +363,7 @@ iframe {
   height: 25px;
 }
 
-
-@media only screen and (min-width: 57em) {
+@media only screen and (min-width: 1920px) {
   .navigation {
     display: flex;
   }
@@ -398,9 +397,66 @@ iframe {
   nav ul {
     display: flex;
   }
+  
+  figure {
+    margin-left: 300px;
+  }
+  
 }
 
-@media only screen and (max-width: 32.5em) {
+@media only screen and (max-width: 960px) {
+  
+  .contents, .contents2 {
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+  
+  figure {
+    max-width: 85%;
+  }
+  
+  .box img {
+    max-width: 300px;
+  }
+  
+  .contents img, .thumbnail, .contents2 img {
+    max-width: 85%;
+    overflow: hidden;
+  }
+  
+  .box h1 {
+    font-size: 30px;
+    margin: 90px auto auto 150px;
+  }
+  
+  table {
+    scale: 1;
+    margin: -200px auto;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1280px) {
+  
+  .box img, figure {
+    max-width: 450px;
+  }
+  
+  figure:first-of-type, figure:nth-of-type(2) {
+    margin-left: 100px;
+  }
+  
+  .box h1 {
+    font-size: 40px;
+    margin: 100px auto auto 180px;
+  }
+  
+  table {
+    scale: 1.40;
+    margin: -260px auto auto 75px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   .container {
     display: block;
   }
@@ -413,6 +469,36 @@ iframe {
 
   .container p {
     width: 85%;
+    margin: auto;
+  }
+  
+  .box {
+    grid-template-columns: 1fr;
+  }
+  
+  table, .box h1 {
+    grid-column: 1;
+  }
+  
+  table {
+    scale: 1.15;
+    margin: -10px auto 10px auto;
+    padding: 10px;
+  }
+  
+  .box h1 {
+    margin: auto auto 10px auto;
+  }
+  
+  .thumbnail, figure {
+    margin: 10px auto;
+  }
+  
+  .box img, figure {
+    max-width: 400px;
+  }
+  
+  .last {
     margin: auto;
   }
 
@@ -436,10 +522,6 @@ iframe {
   .contents2 {
     grid-template-columns: 1fr;
   }
-  
-  .box {
-    grid-template-columns: 1fr;
-  }
 
   .contents h2 {
     margin-top: 15px;
@@ -453,10 +535,6 @@ iframe {
     margin: 10px auto;
     width: 300px;
     height: 200px;
-  }
-  
-  .thumbnail {
-    margin: 10px auto;
   }
 
   iframe {
