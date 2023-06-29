@@ -15,7 +15,6 @@ li {
 .thumbnail {
   background-color: white;
   border-radius: 25px;
-  filter: drop-shadow(0 0 10px #333333);
   margin: 20px auto;
 }
 
@@ -118,7 +117,6 @@ th {
 
 .contents2 img {
   max-width: 400px;
-  border-radius: 25px;
 }
 
 .container {
